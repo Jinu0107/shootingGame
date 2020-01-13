@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Do+Hyeon|Roboto&display=swap');
+#myGame {
+    border: 1px solid #888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#gameOverBox {
+    border: 1px solid #ddd;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: #B3FCE9;
+    background-color: #000;
+    font-size: 120px;
+    text-align: center;
+    padding-top: 200px;
+    /* display: none; */
+    font-family: 'Audiowide', cursive;
+}
+
+#pauseBox {
+    border: 1px solid #ddd;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: #B3FCE9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+    display: none;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    /* display: flex; */
+}
+
+#pauseBox a {
+    all: unset;
+    color: white;
+    font-size: 70px;
+    transition: color .3s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#pauseItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15%;
+    margin-left: -11%;
+    width: 22%;
+    height: 30%;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+#pauseBox a:hover {
+    color: rgb(243, 171, 14);
+}
+
+#startBtn {
+    background-color: #209cee;
+    border-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    height: 2.25em;
+    width: 5em;
+    transition: all;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    background-color: #2280bd;
+    transition-duration: 0.5s;
+}
+
+#mainBox {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/gamebg.jpg);
+}

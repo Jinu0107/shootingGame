@@ -1,0 +1,344 @@
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Do+Hyeon|Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    /* font-family: 'Audiowide', cursive; */
+}
+
+html,body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.fn-user{
+    font-family: 'Roboto', sans-serif;
+}
+.fn-kr{
+    font-family: 'Do Hyeon', sans-serif;
+}
+.fn-game{
+    font-family: 'Audiowide', cursive;
+}
+.out {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.out.fade-out {
+    opacity: 0;
+}
+button {
+    all: unset;
+}
+.bgi{
+    box-sizing: border-box;
+    padding: 1px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/space.jpg);
+	background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.mainbox {
+   margin-top: 120px;
+    
+}
+.mainbox > h1 {
+    color: white;
+    text-align: center;
+    line-height: 160px;
+    font-size: 145px;
+    text-shadow: 0px 0px 10px #000;
+
+}
+.subbox {
+    margin-top: 20px;
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    padding: 15px 30px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
+}
+
+.subbox > a {
+    font-family: 'Audiowide', cursive;
+}
+
+.playBtn {
+    all: unset;
+    font-size: 90px;
+    color: white;
+    transition: color .3s;
+    cursor: pointer;
+}
+.playBtn:hover{
+    color: rgb(243, 171, 14);
+    
+}
+.sign-out-Btn {
+    all: unset;
+    font-size: 65px;
+    color: white;
+    transition: color .3s;
+    cursor: pointer;
+}
+.sign-out-Btn:hover{
+    color: #4374D9;
+}
+.rank-Btn {
+    all: unset;
+    font-size: 65px;
+    color: white;
+    transition: color .3s;
+    cursor: pointer;
+}
+.rank-Btn:hover {
+    color: rgb(243,171,14);
+}
+.option-Btn {
+    all: unset;
+    font-size: 65px;
+    color: white;
+    transition: color .3s;
+    cursor: pointer;
+}
+.option-Btn:hover {
+    color: rgb(243 , 171 , 14);
+
+}
+
+.subnav {
+    margin: 50px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.subnav  button {
+    all: unset;
+    margin: 0 40px;
+    font-size: 80px;
+    color: white;
+    transition: color .3s;
+    cursor: pointer;
+    
+}
+.subnav  button:hover {
+    color: #4374D9;
+    
+}
+#userBox {
+    margin-top:40px ;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    padding: 15px 25px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+#userBox > button{
+    font-family: 'Audiowide', cursive;
+}
+
+#loginbox {
+    position: fixed;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#loginbox > .inner-box {
+    width:35vw;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:row ;
+    overflow: hidden;
+}
+
+#loginbox.on {
+    display: flex;
+}
+
+#loginbox.on.fade-in {
+    opacity: 1;
+}
+#login-right {
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#login-left{
+    width: 40%;
+    padding: 45px 30px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/info-space.jpg);
+    background-size: cover;
+}
+#login-left > *{
+    color: #fff;
+}
+#login-left > h1 {
+    font-size: 50px;
+}
+#login-left > div {
+    font-size: 20px;
+}
+#login-right  .input-box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#login-right input {
+    all : unset;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid rgb(170,170,170);
+    padding-bottom: 5px;
+    width: 68%;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#loginForm{
+    position: relative;
+    width: 100%;
+}
+.loginExit {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.sign-in-Btn{
+    width: 68%;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    transition: color 0.3s;
+    background-color: #e06919;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sign-in-Btn:hover{
+    filter: brightness(110%);
+}
+
+
+#registerbox {
+    position: fixed;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#registerbox > .inner-box {
+    display: flex;
+    flex-direction:row ;
+    width:50vw;
+    height: 56vh;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+#registerbox.on {
+    display: flex;
+}
+
+#registerbox.on.fade-in {
+    opacity: 1;
+}
+#info-space {
+    width: 40%;
+    padding: 45px 30px;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/info-space.jpg);
+    background-size: cover;
+}
+#info-space > *{
+    color: #fff;
+    margin: 5px;
+}
+#info-space > h1 {
+    font-size: 50px;
+}
+#info-space  > div {
+    font-size: 20px;
+}
+#register-space {
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#register-space  input:placehoder {
+    font-weight: bolder;
+}
+
+#register-space  input{
+    all : unset;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid rgb(170,170,170);
+    padding-bottom: 5px;
+    width: 68%;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.outsidediv{
+    margin-top: 40px;
+}
+.insidediv{
+    display: flex;
+    justify-content: center;
+}
+.exit {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+
+}
+.sign-up-Btn{
+    width: 68%;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    transition: color 0.3s;
+    background-color: #e06919;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sign-up-Btn:hover{
+    filter: brightness(110%);
+}
+#registerForm {
+    position: relative;
+    width: 100%;
+}
+
